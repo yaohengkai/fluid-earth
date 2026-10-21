@@ -55,7 +55,9 @@ export default async ({ mode }) => {
       await access('./public/tera');
       return false;
     } catch {
-      return { '/tera': 'https://fluid-earth.byrd.osu.edu' };
+      // The old host (fluid-earth.byrd.osu.edu) now 302-redirects here, and a
+      // cross-origin redirect breaks the app's 'no-cors' preload fetches.
+      return { '/tera': 'https://fluid-earth.live' };
     }
   })();
 
