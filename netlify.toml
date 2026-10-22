@@ -7,6 +7,6 @@
 
 [[redirects]]
   from = "/tera/*"
-  to = "https://fluid-earth.byrd.osu.edu/tera/:splat"
+  to = "https://fluid-earth.live/tera/:splat"
   status = 200
   force = true
